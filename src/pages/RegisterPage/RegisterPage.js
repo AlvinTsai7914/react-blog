@@ -3,14 +3,12 @@ import React, { useState, useContext } from 'react';
 import { register, getMe } from '../../WebAPI';
 import { setAuthToken } from '../../utils';
 import { useHistory } from 'react-router-dom';
-import { AuthContext } from '../../contexts';
 
 const ErrorMessage = styled.div`
   color: red;
 `;
 
 export default function LoginPage() {
-  const { setUser } = useContext(AuthContext);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [nickname, setNickname] = useState('');

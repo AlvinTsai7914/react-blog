@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { newPost } from '../../WebAPI';
 import { useHistory } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Root = styled.div`
   width: 50%;

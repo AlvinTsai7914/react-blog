@@ -42,11 +42,6 @@ const ChangePageButton = styled.button`
   cursor: pointer;
 `;
 
-const ErrorMessage = styled.div`
-  color: red;
-  text-align: center;
-`;
-
 function Post({ post }) {
   return (
     <PostContainer>

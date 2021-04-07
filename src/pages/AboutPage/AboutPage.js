@@ -59,12 +59,9 @@ export default function AboutPage() {
   return (
     <Root>
       <PostContainer>
-        <PostTitle>{post && post.title}</PostTitle>
-        <PostInfo>
-          <PostNickName>{post && post.nickname}</PostNickName>
-          <PostDate>{post && new Date(post.createdAt).toLocaleString()}</PostDate>
-        </PostInfo>
-        <PostContent>{post && post.body}</PostContent>
+        <PostTitle>關於我</PostTitle>
+        <PostInfo></PostInfo>
+        <PostContent>關於留</PostContent>
       </PostContainer>
     </Root>
   );

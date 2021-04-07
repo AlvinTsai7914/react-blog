@@ -31,7 +31,7 @@ function App() {
   return (
     <AuthContext.Provider value={{ user, setUser }}>
       <Root>
-        <BrowserRouter basename="/react-blog">
+        <Router basename="/react-blog">
           <Header />
           <Switch>
             <Route exact path="/">
@@ -53,7 +53,7 @@ function App() {
               <AboutPage />
             </Route>
           </Switch>
-        </BrowserRouter>
+        </Router>
       </Root>
     </AuthContext.Provider>
   );
